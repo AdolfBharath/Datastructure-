@@ -69,8 +69,8 @@
 
 ## Searching Algorithms
 
-* [ ] Linear Search
-* [ ] Binary Search
+* [x] Linear Search
+* [x] Binary Search
 
 ## Advanced DSA
 
