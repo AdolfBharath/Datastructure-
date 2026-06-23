@@ -54,14 +54,38 @@ class Linkedlist:
         while temp.next.next:
             temp = temp.next
         temp.next = None
-            
-        
+# delete the position by the position 
+    def deletepos(self,pos):
+        if pos == 1:
+            self.head = self.head.next
+            return 
+        temp = self.head
+        for i in range(pos-2):
+            temp = temp.next
+        temp.next = temp.next.next
+# display the list 
     def display(self):
         temp = self.head
         while temp:
             print(temp.data,end="->")
             temp = temp.next
         print("null")
+# searching elements 
+    def search(self,key):
+        temp = self.head
+        while temp:
+            if temp.data == key:
+                return True
+            temp = temp.next
+        return False
+#upadting elements 
+    def update(self,old,new):
+        temp = self.head
+        while temp:
+            if temp.data == old:
+                temp.data = new
+                return 
+            temp = temp.next
 l = Linkedlist()
 l.insertb(10)
 l.insertb(20)
