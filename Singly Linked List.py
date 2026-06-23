@@ -23,6 +23,18 @@ class Linkedlist:
         while temp.next:
             temp = temp.next
         temp.next = new_node
+#inserting at the position 
+    def insertp(self,pos,data):
+        new_Node = Node(data)
+        if pos == 1:
+            new_Node.next = self.head
+            self.head = new_Node
+            return 
+        temp = self.head
+        for i in range(pos-2):
+            temp = temp.next
+        new_Node.next = temp.next
+        temp.next = new_Node
 # deteling the element at the beganning
     def deleteb(self):
 # checking the element is there at head (first) or not 
