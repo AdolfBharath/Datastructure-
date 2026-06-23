@@ -31,6 +31,18 @@
 * [ ] Search
 * [ ] Update
 * [ ] Reverse Linked List
+      
+* [x] Create Doubly Linked List
+* [x] Insert at Beginning
+* [x] Insert at End
+* [ ] Insert at Position
+* [x] Delete at Beginning
+* [x] Delete at End
+* [ ] Delete at Position
+* [x] Display
+* [ ] Search
+* [ ] Update
+* [ ] Reverse Linked List
 
 ## Stacks
 
