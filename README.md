@@ -31,7 +31,7 @@
 * [ ] Search
 * [ ] Update
 * [ ] Reverse Linked List
-      
+## Doubly Linked Lists
 * [x] Create Doubly Linked List
 * [x] Insert at Beginning
 * [x] Insert at End
