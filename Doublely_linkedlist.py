@@ -33,6 +33,23 @@ class Doublelinked:
         temp.next = new_node
         new_node.prev = temp
 
+    def insertpos(self,pos,data):
+        new_node = Node(data)
+        if pos == 1:
+            new_node.next = self.head
+            if self.head:
+                self.head.prev = new_node
+            self.head = new_node
+            return
+        temp = self.head
+        for i in range(pos-2):
+            temp = temp.next
+        new_node.next = temp.next
+        new_node.prev = temp
+        if temp.next:
+            temp.next.prev = new_node
+        temp.next = new_node
+
     def deleteb(self):
         if self.head is None:
             return
@@ -57,6 +74,21 @@ class Doublelinked:
 
         temp.prev.next = None
 
+    def deletepos(self,pos):
+        if self.head is None:
+            return
+        if pos == 1:
+            self.head = self.head.next 
+            if self.head:
+                self.head.prev = None
+            return
+        temp = self.head
+        for i in range(pos-1):
+            temp = temp.next
+        temp.prev.next = temp.next
+        if temp.next:
+            temp.next.prev = temp.prev
+            
     def display(self):
         temp = self.head
 
