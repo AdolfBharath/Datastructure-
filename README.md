@@ -92,3 +92,13 @@
 * [ ] Disjoint Set Union
 * [ ] Dynamic Programming
 * [ ] Greedy Algorithms
+
+##BST
+* [x] Create BST
+* [x] Insertion
+* [x] Inorder Traversal
+* [x] Pre order Traversal
+* [x] Post order Traversal
+* [x] Search
+* [x] Min and max
+* [x] Delete
